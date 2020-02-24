@@ -75,7 +75,8 @@ export default function observable(data) {
 
  /**
   * @param {string} name
-  * @param {void} value
+  * @param {any} value
+  * @returns {void}
   */
  function makeReactive(name, value) {
   Object.defineProperty(data, name, {
